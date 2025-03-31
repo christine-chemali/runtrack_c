@@ -11,7 +11,7 @@ sur la sortie standard, en utilisant la fonction my_putchar.
 
 void my_putchar(char c) {
   putchar(c);
-} 
+} /*
 int main(){
   my_putchar('H');
   my_putchar('E');
@@ -20,4 +20,4 @@ int main(){
   my_putchar('O');
   my_putchar('!');
   return 0;
-}
+}  */
