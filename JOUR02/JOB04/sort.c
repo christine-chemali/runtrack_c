@@ -22,3 +22,42 @@ Pour tour allant de 1 à N faire
         Arrêter (le tableau est déja trié)
     Fin Si
 Fin Pour*/
+
+#include <stdio.h>
+#include <string.h>
+
+void sort(char *tab[]){
+    int n = 0;
+    while (tab[n] != NULL){
+        n++;
+    }
+
+    int i, j;
+    int swapped;
+    char *temp;
+
+    for (i = 0; i < n - 1; i++){
+        swapped = 0;
+
+        for (j = 0; j < n - i - 1; j++){
+            if (strcmp(tab[j], tab[j+1])>0){
+                char *temp = tab[j];
+                tab[j] = tab[j+1];
+                tab[j+1] = temp;
+                swapped =1;
+            }
+        }
+        if (swapped == 0){
+            break;
+        } 
+    }
+}
+
+int main(){
+    char *table[]={"Pomme","poire","123scoubidou","bidou", NULL};
+    sort(table);
+    for (int i = 0; table[i]!= NULL; i++){
+        printf("%s\n", table[i]);
+    }
+    return 0;
+}

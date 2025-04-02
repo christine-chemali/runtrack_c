@@ -68,3 +68,39 @@ putchar :
 
 
 printf : 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+    Pour réaliser des taches sur les chaines de caractères.
+    memchr() :
+            retourne un pointeur à la première occurence d'une valeur dans le block mémoire
+    memcmp() :
+            compare deux blocks mémoire pour determiner lequel represente une plus grande valeur numérique
+    memcpy() : 
+            copie les données d'un block à un autre
+    memmove() : 
+            copie les données d'un block mémoire à un autre en tenant compte de la possibilité que la mémoire sature
+    strcat() : 
+            ajoute une chaine de caractère à la fin d'une autre
+    strchr(): 
+            Retourne le pointer à la première occurence d'un caractère dans une chaine.
+    strcmp(): 
+            compare les valeurs ASCII de charactères de deux chaines de caractères pour determine laquelle a la plus grande valeur
+    strcoll(): 
+            compare les valeurs locales des caractères de deux chaines pour déterminer laquelle à la valeur la plus élevée.
+    strcpy(): 
+            copie les caractères d'une chaine dans la mémoire d'une autre chaine
+    strbrk(): 
+            retourne le pointer à la première position dans une chaine qui contient un ou plusieurs charactères
+    strrchr() :
+            Retourne le pointer à la dernière occurence d'un charactère dans une chaine
+    strspn() :
+            Retourne la longueur d'une chaine jusqu'au premier caractère autre que celui spécifié
+    strstr() :
+            Retourne un pointeur vers la première occurence d'une chaine dans une autre chaine
+    strtok() : 
+            Divise une chaîne en plusieurs parties à l'aide de délimiteurs.
+    strxfrm() :
+            Convertit les caractère d'une chaine du codage ASCII au codage des paramètres régionaux actuels.
+#include <ctype.h>
