@@ -56,7 +56,16 @@ void : utilisé pour une fonction qui ne retourne aucune valeur lors de son ache
     int *ptr = &a; // ptr obtient l'adresse de la variable a
     
     Ici &a renvoie l'addresse de la variable a qui est ensuite stockée dans le pointeur ptr.
-    
+
+i++ : 
+    index++ est une opération d'incrémentation post_fixe cad que la valeur de index est augmentée de 1 mais l'ancienne valeur de index avant l'incrémentation est utilisée dans l'expression en cours.
+    La valeur actuelle de l'index est utilisée dans l'expression
+    Ensuite index est incréménté de 1
+    itére à travers les élements sans avoir à écrire index = index +1
+    EXISTE EGALEMENT :
+    ++index ou ++i : ou pré-incrémentation
+    dans ce cas index est d'abord incrémenté de 1 puis la nouvelle valeur est utilisée dans l'expression.
+
 int :
 
 malloc :
